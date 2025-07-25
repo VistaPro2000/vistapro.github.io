@@ -116,6 +116,37 @@
       </div>
     </div>
   </section>
+  <section class="referencias">
+  <h2>Referencias</h2>
+  <div class="videos-container">
+    <video src="videos/video1.mp4" autoplay muted loop playsinline></video>
+    <video src="videos/video2.mp4" autoplay muted loop playsinline></video>
+    <video src="videos/video3.mp4" autoplay muted loop playsinline></video>
+  </div>
+</section>
+
+<style>
+  .referencias {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .videos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .videos-container video {
+    width: 200px;
+    height: 355px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+</style>
+
 
   <footer>
     <p>¿Te interesa trabajar con nosotros?</p>
