@@ -92,13 +92,51 @@
       font-weight: bold;
       text-decoration: none;
     }
+    .hero {
+  position: relative;
+  height: 300px;
+  background: url('TU-IMAGEN-PANORAMICA.jpg') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 50% opacidad oscura */
+  z-index: 1;
+}
+
+.hero-texto {
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 60px;
+  height: auto;
+  z-index: 2;
+}
+
   </style>
 </head>
 <body>
-  <header>
+  <header class="hero">
+  <img src="e706361c-f99d-4a49-b0e3-22c86974d420.png" alt="Logo Vista Pro" class="logo">
+  <div class="hero-texto">
     <h1>VISTA PRO</h1>
-    <p>Increibles tomas áreas con Dron y edición de video de alta calidad</p>
-  </header>
+    <p>Increíbles tomas aéreas con Dron y edición de video de alta calidad</p>
+  </div>
+</header>
  <section class="video-section">
     <iframe src="https://www.youtube.com/embed/rCp5_D7uDfM?autoplay=1&mute=1&loop=1&playlist=rCp5_D7uDfM" frameborder="0" allowfullscreen></iframe>
   </section>
